@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "com.vti.frontend.Program",
+            "projectName": "VTI_JDBC_e1132ae8"
+        },
+        {
+            "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "com.vti.frontend.Program",
+            "projectName": "VTI_JDBC",
+            "cwd": "${workspaceFolder}",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/java_jdbc/lib/mysql-connector-java-5.1.49.jar"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+# Compiled Java files
+**/bin/
+*.class
+
+# JAR files
+*.jar
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+VTI_HomeWork/
+
+bin/
+

@@ -24,6 +24,8 @@ public class Program {
 			System.out.format("| %-72s |%n", "7. Thoat chuong trinh");
 			System.out.format("+--------------------------------------------------------------------------+%n");
 
+			System.out.println();
+			System.out.print("Nhap chuc nang su dung: ");
 			int choose = ScannerUtils.inputIntPositive();
 
 			switch (choose) {
@@ -48,7 +50,6 @@ public class Program {
 				break;
 			case 7:
 				return;
-
 			default:
 				System.out.println("Nhap lai:");
 				break;

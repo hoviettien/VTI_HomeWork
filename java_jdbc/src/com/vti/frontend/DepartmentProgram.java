@@ -29,6 +29,7 @@ public class DepartmentProgram {
 		}
 
 		System.out.println("+-----------+--------------------------------------+");
+		System.out.println();
 	}
 
 	public void getDepartmentById(int id) throws ClassNotFoundException, SQLException {
@@ -40,6 +41,7 @@ public class DepartmentProgram {
 		} else {
 			System.out.println("Department with ID " + id + " not found.");
 		}
+		System.out.println();
 	}
 
 	public void isDepartmentNameExists(String name) throws ClassNotFoundException, SQLException {
@@ -49,6 +51,7 @@ public class DepartmentProgram {
 		} else {
 			System.out.println("Department name '" + name + "' does not exist.");
 		}
+		System.out.println();
 	}
 
 }

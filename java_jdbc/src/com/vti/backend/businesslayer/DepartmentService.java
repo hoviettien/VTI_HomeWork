@@ -28,4 +28,9 @@ public class DepartmentService implements IDepartmentService {
 		Department department = departmentRepository.getDepartmentById(id);
 		return department;
 	}
+	
+	@Override
+	public boolean isDepartmentNameExists(String name) throws ClassNotFoundException, SQLException {
+		return departmentRepository.isDepartmentNameExists(name);
+	}
 }

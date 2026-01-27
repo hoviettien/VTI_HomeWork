@@ -27,4 +27,7 @@ public class DepartmentController {
 		return department;
 	}
 
+	public boolean isDepartmentNameExists(String name) throws ClassNotFoundException, SQLException {
+		return departmentService.isDepartmentNameExists(name);
+	}
 }

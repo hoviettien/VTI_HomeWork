@@ -42,4 +42,13 @@ public class DepartmentProgram {
 		}
 	}
 
+	public void isDepartmentNameExists(String name) throws ClassNotFoundException, SQLException {
+		boolean exists = departmentController.isDepartmentNameExists(name);
+		if (exists) {
+			System.out.println("Department name '" + name + "' exists.");
+		} else {
+			System.out.println("Department name '" + name + "' does not exist.");
+		}
+	}
+
 }

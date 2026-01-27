@@ -46,4 +46,11 @@ public class DepartmentRepository implements IDepartmentRepository {
 			return null;
 		}
 	}
+
+	@Override
+	public boolean isDepartmentNameExists(String name) throws ClassNotFoundException, SQLException {
+		String sql = "SELECT * FROM DEPARTMENT WHERE DepartmentName = N'" + name + "';";
+		ResultSet resultSet = jdbcUtils.executeQuery(sql);
+		return resultSet.next();
+	}
 }

@@ -36,6 +36,9 @@ public class Program {
 				departmentProgram.getDepartmentById(id);
 				break;
 			case 3:
+				System.out.println("Nhap ten phong ban can kiem tra:");
+				String name = ScannerUtils.inputString();
+				departmentProgram.isDepartmentNameExists(name);
 				break;
 			case 4:
 				break;

@@ -8,4 +8,5 @@ import com.vti.entity.Department;
 public interface IDepartmentService {
 	public List<Department> getAllDepartment() throws ClassNotFoundException, SQLException;
 	public Department getDepartmentById(int id) throws ClassNotFoundException, SQLException;
+	public boolean isDepartmentNameExists(String name) throws ClassNotFoundException, SQLException;
 }

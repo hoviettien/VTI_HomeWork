@@ -13,7 +13,7 @@ public class Program {
 
 		while (true) {
 			System.out.format("+--------------------------------------------------------------------------+%n");
-			System.out.format("|                        		Chon chuc nang                             %n");
+			System.out.format("|                        	Chon chuc nang                             |%n");
 			System.out.format("+--------------------------------------------------------------------------+%n");
 			System.out.format("| %-72s |%n", "1. Hien thi danh sach phong ban");
 			System.out.format("| %-72s |%n", "2. Tim kiem phong ban theo ID");
@@ -31,6 +31,9 @@ public class Program {
 				departmentProgram.getAllDepartment();
 				break;
 			case 2:
+				System.out.println("Nhap ID phong ban can tim:");
+				int id = ScannerUtils.inputIntPositive();
+				departmentProgram.getDepartmentById(id);
 				break;
 			case 3:
 				break;

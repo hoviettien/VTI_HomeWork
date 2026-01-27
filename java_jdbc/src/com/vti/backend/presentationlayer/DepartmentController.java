@@ -22,4 +22,9 @@ public class DepartmentController {
 		return listDepartments;
 	}
 
+	public Department getDepartmentById(int id) throws ClassNotFoundException, SQLException {
+		Department department = departmentService.getDepartmentById(id);
+		return department;
+	}
+
 }

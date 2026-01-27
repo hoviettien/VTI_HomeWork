@@ -22,4 +22,10 @@ public class DepartmentService implements IDepartmentService {
 		List<Department> listDepartments = departmentRepository.getAllDepartment();
 		return listDepartments;
 	}
+
+	@Override
+	public Department getDepartmentById(int id) throws ClassNotFoundException, SQLException {
+		Department department = departmentRepository.getDepartmentById(id);
+		return department;
+	}
 }

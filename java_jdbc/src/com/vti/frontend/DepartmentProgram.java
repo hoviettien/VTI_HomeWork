@@ -31,4 +31,15 @@ public class DepartmentProgram {
 		System.out.println("+-----------+--------------------------------------+");
 	}
 
+	public void getDepartmentById(int id) throws ClassNotFoundException, SQLException {
+		Department department = departmentController.getDepartmentById(id);
+
+		if (department != null) {
+			System.out.println("Department found:");
+			System.out.format("ID: %d, Name: %s%n", department.getId(), department.getName());
+		} else {
+			System.out.println("Department with ID " + id + " not found.");
+		}
+	}
+
 }

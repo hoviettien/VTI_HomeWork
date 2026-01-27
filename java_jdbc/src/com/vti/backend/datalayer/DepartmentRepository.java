@@ -33,4 +33,17 @@ public class DepartmentRepository implements IDepartmentRepository {
 		return listDepartments;
 	}
 
+	@Override
+	public Department getDepartmentById(int id) throws ClassNotFoundException, SQLException {
+		String sql_SelectDepartmentId = "SELECT * FROM DEPARTMENT WHERE DepartmentID = " + id + ";";
+		ResultSet result = jdbcUtils.executeQuery(sql_SelectDepartmentId);
+		if (result.next()) {
+			Department department = new Department();
+			department.setId(result.getInt(1));
+			department.setName(result.getString(2));
+			return department;
+		} else {
+			return null;
+		}
+	}
 }

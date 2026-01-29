@@ -3,10 +3,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "UserFunction",
+            "name": "Program",
             "request": "launch",
-            "mainClass": "com.vti.frontend.UserFunction",
-            "projectName": "VTI_JDBC_e1132ae8"
+            "mainClass": "com.vti.frontend.Program",
+            "projectName": "VTI_FinalExamp_ece775f6"
         },
         {
             "type": "java",

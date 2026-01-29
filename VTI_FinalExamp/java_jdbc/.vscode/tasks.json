@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Java Project",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "mkdir -Force bin/com/vti/resource; javac -encoding UTF-8 -d bin -cp 'lib/*' src\\com\\vti\\utils\\*.java src\\com\\vti\\entity\\*.java src\\com\\vti\\backend\\datalayer\\*.java; javac -encoding UTF-8 -d bin -cp 'lib/*;bin' src\\com\\vti\\backend\\businesslayer\\*.java src\\com\\vti\\backend\\presentationlayer\\*.java src\\com\\vti\\frontend\\*.java; Copy-Item src\\com\\vti\\resource\\*.properties bin\\com\\vti\\resource\\ -Force"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$javac"]
+        }
+    ]
+}

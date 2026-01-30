@@ -6,4 +6,5 @@ import com.vti.entity.User;
 
 public interface IUserRepository {
    List<User> getAllByProjectId(int projectId) throws SQLException, ClassNotFoundException;
+   boolean login(String email, String password) throws SQLException, ClassNotFoundException;
 }

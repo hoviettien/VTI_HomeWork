@@ -18,6 +18,7 @@ public class UserController {
             e.printStackTrace();
         }
     }
+
     public List<com.vti.entity.User> getAllByProjectId(int projectId) {
         try {
             return userService.getAllByProjectId(projectId);
@@ -27,4 +28,7 @@ public class UserController {
         }
     }
 
+    public boolean login(String email, String password) throws SQLException, ClassNotFoundException {
+        return userService.login(email, password);
+    }
 }

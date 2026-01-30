@@ -20,4 +20,8 @@ public class UserService implements IUserService {
         return userRepository.getAllByProjectId(projectId);
     }
 
+    @Override
+    public boolean login(String email, String password) throws SQLException, ClassNotFoundException {
+        return userRepository.login(email, password);
+    }
 }

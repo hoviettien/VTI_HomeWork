@@ -10,6 +10,7 @@ import com.vti.entity.User;
 import com.vti.entity.Employee;
 import com.vti.utils.JdbcUtils;
 
+
 public class UserRepository implements IUserRepository {
 
     private JdbcUtils jdbcUtils;
@@ -40,5 +41,15 @@ public class UserRepository implements IUserRepository {
             }
         }
         return users;
+    }
+
+    @Override
+    public boolean login(String email, String password) throws SQLException, ClassNotFoundException {
+        String sql = "SELECT * FROM Users WHERE email = ? AND password = ?";
+        PreparedStatement preStatement = jdbcUtils.createPrepareStatement(sql);
+        preStatement.setString(1, email);
+        preStatement.setString(2, password);
+        ResultSet resultSet = preStatement.executeQuery();
+        return resultSet.next();
     }
 }

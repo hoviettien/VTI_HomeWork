@@ -16,24 +16,13 @@ public class Program {
 			System.out.format("+-------------------------------------------------------------------------------+%n");
 			System.out.format("|                                Choose please                                  |%n");
 			System.out.format("+-------------------------------------------------------------------------------+%n");
-			System.out.format(leftAlignFormat, "Question 2. Tim thanh vien là Employee cua Project theo ID");
-			System.out.format(leftAlignFormat, "Question 3. Danh sach Manager cua cac project");
-			System.out.format(leftAlignFormat, "Question 4. Login");
+			System.out.format(leftAlignFormat, "Question 1. Danh sach nhan vien va quan ly cua cac project");
 			System.out.format("+-------------------------------------------------------------------------------+%n");
 			switch (ScannerUtils.inputIntPositive()) {
 				case 1:
-					// userFunction.getEmployeesByProjectId();
+					userFunction.getAllByProjectId();
 					break;
 				case 2:
-					userFunction.getEmployeesByProjectId();
-					break;
-				case 3:
-					userFunction.getAllManagers();
-					break;
-				case 4:
-					userFunction.login();
-					break;
-				case 5:
 					System.out.println("Thoat chuong trinh!");
 					return;
 				default:

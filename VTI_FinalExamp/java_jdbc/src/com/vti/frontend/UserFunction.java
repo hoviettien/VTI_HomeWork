@@ -70,4 +70,25 @@ public class UserFunction {
             e.printStackTrace();
         }
     }
+
+    public void login(){
+        System.out.println("Nhap email: ");
+        String email = ScannerUtils.inputString();
+        System.out.println("Nhap password: ");
+        String password = ScannerUtils.inputString();
+        try {
+            boolean isLogin = userController.login(email, password);
+            if (isLogin) {
+                System.out.println();
+                System.out.println("Login thanh cong!");
+                System.out.println();
+            } else {
+                System.out.println();
+                System.out.println("Login that bai! Vui long kiem tra lai email va password.");
+                System.out.println();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

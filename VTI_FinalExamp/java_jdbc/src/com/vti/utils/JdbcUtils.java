@@ -17,7 +17,7 @@ public class JdbcUtils {
 	public JdbcUtils() throws FileNotFoundException, IOException {
 		property = new Properties();
 		property.load(this.getClass().getClassLoader().getResourceAsStream("com/vti/resource/database.properties"));
-		System.out.println("JDBC URL = " + property.getProperty("url"));
+		// System.out.println("JDBC URL = " + property.getProperty("url"));
 
 	}
 

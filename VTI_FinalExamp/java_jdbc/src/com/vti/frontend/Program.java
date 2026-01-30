@@ -31,7 +31,10 @@ public class Program {
 					userFunction.getAllManagers();
 					break;
 				case 4:
-					// functionProgram.login();
+					userFunction.login();
+					break;
+				case 5:
+					System.out.println("Thoat chuong trinh!");
 					return;
 				default:
 					System.out.println("Nhap lai:");

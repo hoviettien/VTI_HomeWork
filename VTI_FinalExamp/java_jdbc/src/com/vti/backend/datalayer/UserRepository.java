@@ -50,4 +50,14 @@ public class UserRepository implements IUserRepository {
         return managers;
     }
 
+    @Override
+    public boolean login(String email, String password) throws SQLException, ClassNotFoundException {
+        String sql = "SELECT * FROM Users WHERE email = ? AND password = ?";
+        PreparedStatement preStatement = jdbcUtils.createPrepareStatement(sql);
+        preStatement.setString(1, email);
+        preStatement.setString(2, password);
+        ResultSet resultSet = preStatement.executeQuery();
+        return resultSet.next();
+    }
+
 }

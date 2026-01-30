@@ -30,4 +30,8 @@ public class UserController {
         return userService.getAllManagers();
     }
 
+    public boolean login(String email, String password) throws SQLException, ClassNotFoundException {
+        return userService.login(email, password);
+    }
+
 }

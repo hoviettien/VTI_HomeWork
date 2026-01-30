@@ -23,5 +23,9 @@ public class UserService implements IUserService {
     public List<Manager> getAllManagers() throws SQLException, ClassNotFoundException {
         return userRepository.getAllManagers();
     }
+    @Override
+    public boolean login(String email, String password) throws SQLException, ClassNotFoundException {
+        return userRepository.login(email, password);
+    }
 
 }

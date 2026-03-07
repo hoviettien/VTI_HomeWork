@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BT Lab_5</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="LAB_5.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="" class="form" id="form">
+                <div class="title">Quản lý nhân viên</div>
+                <label for="">ID:</label>
+                <br>
+                <input
+                    type="number"
+                    placeholder="Nhập ID nhân viên"
+                    class="input-id"
+                    id="id"
+                >
+                <br>
+                <br>
+                <label for="">Email:</label>
+                <br>
+                <input
+                    type="email"
+                    placeholder="Nhập email nhân viên"
+                    class="input-email"
+                    id="email"
+                >
+                <br>
+                <br>
+                <label for="">Username:</label>
+                <br>
+                <input
+                    type="text"
+                    placeholder="Nhập username nhân viên"
+                    class="input-username"
+                    id="username"
+                >
+                <br>
+                <br>
+                <label for="">Full Name:</label>
+                <br>
+                <input
+                    type="text"
+                    placeholder="Nhập họ tên nhân viên"
+                    class="input-fullname"
+                    id="fullname"
+                >
+                <br>
+                <br>
+                <label for="">Select a Department:</label>
+                <br>
+                <select name="" id="department" class="chosse-department">
+                    <option value="">--Chọn phòng ban--</option>
+                    <option value="Development">Development</option>
+                    <option value="Testing">Testing</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+                <br>
+                <br>
+                <label for="">Select a Position:</label>
+                <br>
+                <select name="" id="position" class="chosse-position">
+                    <option value="">--Chọn chức vụ--</option>
+                    <option value="PM">PM</option>
+                    <option value="Dev">Dev</option>
+                    <option value="BA">BA</option>
+                    <option value="Test">Test</option>
+                </select>
+                <br>
+                <br>
+                <label for="">Created Date:</label>
+                <br>
+                <input type="date" class="chosse-date">
+                <br>
+                <br>
+                <button type="button" class="button-save" onclick="Save()">Save</button>
+                <button class="button-update">Update</button>
+                <button type="reset" class="button-reset" onclick="Reset()">Reset</button>
+            </form>
+            <table class="table">
+                <tbody id="table">
+                    <tr class="row1">
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>Fullname</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Created Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script src="./LAB_5.js"></script>
+</html>

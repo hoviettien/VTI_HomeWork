@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.form {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.title {
+  width: 30%;
+  font-size: 24px;
+  border-bottom: 1px solid rgb(186, 178, 178);
+  margin-bottom: 15px;
+}
+.input-id {
+  width: 30%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.input-email {
+  width: 30%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.input-username {
+  width: 30%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.input-fullname {
+  width: 30%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.chosse-department {
+  width: 30.5%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.chosse-position {
+  width: 30.5%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.chosse-date {
+  width: 30%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.button-save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-update {
+  background-color: #dfbc0d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-reset {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.table {
+  width: 70%;
+  margin-left: 10px;
+}
+.row1 {
+  background-color: #f2f2f2;
+}
+.row1 th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: start;
+}
+.row2 {
+  background-color: #fff;
+}
+.row2 td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: start;
+}
+.button-edit {
+  background-color: #dfbc0d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-delete {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

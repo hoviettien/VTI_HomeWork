@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>UserName</th>
+                <th>FullName</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>viettien</td>
+                <td>Viet Tien</td>
+                <td>BE</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ngocanh</td>
+                <td>Ngoc Anh</td>
+                <td>Marketing</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>DaoNQ</td>
+                <td>Quang Đạo</td>
+                <td>Viettel</td>
+            </tr>
+        </table>
+        <h3>Products List</h3>
+        <ol>
+            <li>Jeans</li>
+            <li>
+                T-shirt
+                <ol>
+                    <li>White T-shirt</li>
+                    <li>Black T-shirt</li>
+                </ol>
+            </li>
+            <li>Coat</li>
+        </ol>
+        <h3>Products List</h3>
+        <ul>
+            <li>Jacket</li>
+            <li>
+                Jeans
+                <ul>
+                    <li>
+                        Black Jeans
+                        <ul>
+                            <li>Long</li>
+                            <li>Short</li>
+                        </ul>
+                    </li>
+                    <li>Blue Jeans</li>
+                    <li>White Jeans</li>
+                </ul>
+            </li>
+            <li>Shoos</li>
+            <li>Boot</li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <h3>Create new account</h3>
+        <form action="">
+            <fieldset>
+                <legend>Basic information</legend>
+                <label for="">Email:</label>
+                <br>
+                <input type="email">
+                <br>
+                <br>
+                <label for="">Username:</label>
+                <br>
+                <input type="text">
+                <br>
+                <br>
+                <label for="">Fullname:</label>
+                <br>
+                <input type="text">
+                <br>
+                <br>
+                <label for="">Select a department:</label>
+                <br>
+                <select name="" id="">
+                    <option value="">Select department</option>
+                    <option value="">IT</option>
+                    <option value="">HR</option>
+                    <option value="">Marketing</option>
+                </select>
+                <br>
+                <br>
+                <label for="">Select a position:</label>
+                <br>
+                <select name="" id="">
+                    <option value="">Select position</option>
+                    <option value="">CEO</option>
+                    <option value="">Member</option>
+                    <option value="">Manager</option>
+                </select>
+                <br>
+                <br>
+                <button>Create</button>
+                <button>Reset</button>
+                <br>
+                <button>Close</button>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Additional information</legend>
+                <label for="">Gender</label>
+                <br>
+                <input type="radio" checked>Male
+                <br>
+                <input type="radio">FeMale
+                <br>
+                <input type="radio">
+                Other
+                <br>
+                <br>
+                <label for="">Interest</label>
+                <br>
+                <input type="checkbox"> Football
+                <br>
+                <input type="checkbox"> Cook
+                <br>
+                <input type="checkbox"> Swimming
+                <br>
+                <input type="checkbox"> Coding
+                <br>
+                <input type="checkbox"> Running
+                <br>
+                <input type="checkbox"> Dancing
+                <br>
+                <input type="checkbox"> Ok
+                <br>
+            </fieldset>
+            <fieldset>
+                <label for="">Price</label><br>
+                min 0
+                <input type="range">
+                500 max
+            </fieldset>
+        </form>
+    </body>
+</html>
